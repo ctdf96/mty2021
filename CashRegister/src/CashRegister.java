@@ -38,8 +38,7 @@ public class CashRegister {
 		int received;
 		System.out.println("お預かり：\\");
 		received = sc.nextInt();
-		
-		int change = received-total; 
-		System.out.println("お釣り：\\"+ change);
+	
+		System.out.println("お釣り：\\"+ (received - (total * 1.1)));
 
 	}}
