@@ -86,7 +86,7 @@ public class CashRegister {
 			System.err.println("金額が不正です。システムを終了します。");
 			System.exit(-3);}
 
-		if(received < (total+ tax)) {
+		else if(received < (total+ tax)) {
 			System.err.println("お預かり金額が合計金額より少ないです。システムを終了します。");
 			System.exit(-4);}
 
