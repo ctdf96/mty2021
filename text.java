@@ -1,24 +1,26 @@
-int k = 1;
-while(k <= 9) {
+int i = 1;
+while(i <= 9) {
 
-int l =1;
-while(l <= 9) {
-	System.out.print(k * l +"");
-	l++;
+int j = 1;
+while(j <= 9) {
+	System.out.print(i * j +" ");
+	j++;
 	}
 	System.out.println();
-	k++;
+	i++;
 	}
 
-for(int i = 1;1<=100;i++) {
+//出席番号が51番の学生を見つける
+for(int i = 1;　1 <= 100;　i++) {
 	if(i==51) {
 		break;
 		}
-
 }
 
-for(int i =1;i<=10;i++) {
-	if(i==5) {
+//continueの使いどころ
+//社長がi = 5
+for(int i =　1;　i <= 10　;i++) {
+	if　(i==5) {
 		continue;
 		}
 	System.out.println("飲み会の案内をする");
