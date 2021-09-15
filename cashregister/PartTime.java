@@ -14,7 +14,18 @@ public class PartTime {
 		this.empRank = empRank;
 	}
 		
-		
+	
+	//mainに書く用
+	//		アルバイト追加
+	//		PartTime prt1 = new PartTime(3, "吉田", 1);
+	//		PartTime prt2 = new PartTime(4, "田中", 1);
+	//
+	//		ArrayList<PartTime> prtArray = new ArrayList<>();
+	//		prtArray.add(prt1);
+	//		prtArray.add(prt2);
+	
+	
+	
 	//取得するメソッド(getter)と代入するメソッド(setter)を前もって作成しておく
 	public int getEmpNo() {
 		return prtNo;
