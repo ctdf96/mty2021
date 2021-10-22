@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご利用アンケート</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>ご利用アンケート</h1>
+                </div>
+                <div class="col-sm-6 align-right">
+                    <a href="/">HOMEへ戻る</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <hr>
+    <div class="container">
+        <div class="col-sm-8 offset-md-2">
+            <form action="http://localhost/" method="post" class="row">
+                <p>この度は、ご利用頂きありがとうございます。恐れ入りますが、
+                    以下のフォームにご記入頂き、送信して頂けると幸いです。
+                </p>
+                <div class="form-group">
+                    <label for="name">
+                        お名前
+                    </label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="例）山田太郎">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-sm-8 offset-md-2">
+            <div class="form-group">
+                <label for="job">ご職業</label>
+                <select id="job" name="job" class="form-control">
+                    <option value="">選択してください</option>
+                    <option value="会社員">会社員</option>
+                    <option value="学生">学生</option>
+                    <option value="その他">その他</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">送信する</button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <footer>
+            <p>&copy; H20 space</p>
+        </footer>
+    </div>
+</body>
+
+</html>

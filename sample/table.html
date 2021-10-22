@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table practice</title>
+</head>
+
+<style>
+    /*   table {
+    border-collapse: collapse;
+    }
+
+    table td {
+        border: solid 5px #999;
+    }
+
+    caption {
+        caption-side: bottom;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table td {
+        border: 3px solid #fff;
+    }
+
+    td {
+        padding: 0.3em 3em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #aaa;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ddd;
+    }
+*/
+    table {
+        border-collapse: collapse;
+        border: solid 1px white;
+    }
+    th td{
+        border: solid 1px white;
+    }
+</style>
+
+<body>
+    <table border="1">
+        <caption>表のタイトル</caption>
+        <!--<tr><th>A</th><th>B</th><th>C</th></tr>CSSとの関係で設定しておいたほうがいい-->
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td rowspan="3">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>表のタイトル</caption>
+        <!--<tr><th>A</th><th>B</th><th>C</th></tr>CSSとの関係で設定しておいたほうがいい-->
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td rowspan="3">3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+
+</html>

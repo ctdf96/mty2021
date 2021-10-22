@@ -1,0 +1,67 @@
+DROP DATABASE IF EXISTS spring_jdbc;
+
+CREATE DATABASE spring_jdbc DEFAULT CHARACTER SET utf8;
+
+USE spring_jdbc;
+
+CREATE TABLE members(
+    id INT  NOT NULL  AUTO_INCREMENT,
+    name  CHAR(100)  NOT NULL,
+    email CHAR(50)  NOT NULL,
+    phoneNumber CHAR(11)  NOT NULL,
+    birthday DATE NOT NULL,
+    PRIMARY KEY(id)
+)ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+INSERT INTO members 
+VALUES
+(1,'Suzuki','suzuki@ken.jp','09011111111', '1990/01/01'),
+(2,'Sato','sato@ken.jp','09022222222', '1992/02/02'),
+(3,'Takahashi','takahashi@ken.jp','09033333333', '1991/03/03'),
+(4,'Tanaka','tanaka@ken.jp','09044444444', '1993/04/04');
+
+CREATE TABLE questions (
+    question_id int PRIMARY KEY AUTO_INCREMENT,
+    question_sentence VARCHAR(2000) NOT NULL,
+    option1_value CHAR(1) NOT NULL,
+    option1_label VARCHAR(400) NOT NULL,
+    option2_value CHAR(1) NOT NULL,
+    option2_label VARCHAR(400) NOT NULL,
+    option3_value CHAR(1) NOT NULL,
+    option3_label VARCHAR(400) NOT NULL,
+    option4_value CHAR(1) NOT NULL,
+    option4_label VARCHAR(400) NOT NULL,
+    right_answer CHAR(1) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+INSERT INTO questions
+VALUES
+(
+    1,
+    'メソッドは、3 つの引数を受け取るように宣言されています。とあるプログラムはこのメソッドを呼び出すときに、引数に 2 つ値を渡します。結果はどうなりますか？',
+    'A','コンパイルエラーになる',
+    'B','第 3 引数は null 値が与えられる',
+    'C','第 3 引数は、その宣言されたデータ型に適した値が与えられる',
+    'D','メソッドは第 3 引数にアクセスしようとすると例外が発生する',
+    'A'
+),
+(
+    2,
+    'boolean型の変数を初期化するには、どれが適切ですか？',
+    'A','boolean h = 1;',
+    'B','boolean k = 0;',
+    'C','boolean m = null;',
+    'D','boolean j = (1<5);',
+    'D'
+),
+(
+    3,
+    'どの宣言が初期容量 128 の文字列を格納できる StringBuilder クラスの宣言ですか？',
+    'A','StringBuilder sb = new String("128");',
+    'B','StringBuilder sb = new StringBuilder(128);',
+    'C','StringBuilder sb = StringBuilder.setCapacity("128");',
+    'D','StringBuilder sb = StringBuilder.getInstance("128");',
+    'B'
+);
+
+COMMIT;
