@@ -1,0 +1,14 @@
+@charset "UTF-8";
+h1 {
+	font-style: italic;
+	border-left: #ff0000 3px double;
+	border-bottom: #ff0000 3px double;
+}
+#footer{
+	margin-top: 20px;
+	border-top: 1px solid #cccccc;
+}
+
+#footer p{
+	margin: 0;
+}
