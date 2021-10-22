@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font-weight: normal;
+}
+table {
+    border-collapse: collapse;
+    margin: 16px 0px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 4px;
+}
+.container {
+    margin: 0 auto;
+    width: 760px;
+}
+.copyright {
+    border-top: 1px solid #999;
+    color: #999;
+    margin-top: 16px;
+    padding-top: 4px;
+}
+.disp-block {
+    display: block;
+}
+.user-info{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+.form-row {
+    margin: 8px auto;
+}
+.errors {
+    color: #990000;
+}
+.btn {
+    background: #0066ff;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    padding: 4px 16px;
+}
+.links {
+    background: #eee;
+    margin: 16px auto;
+}
